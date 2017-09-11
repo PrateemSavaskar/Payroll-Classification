@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     newsal2-weka.filters.unsupervised.attribute.Remove-R1-2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Normalize-S10.0-T0.0
+Instances:    18405
+Attributes:   8
+              JobTitle
+              BasePay
+              OvertimePay
+              OtherPay
+              Benefits
+              TotalPay
+              TotalPayBenefits
+              Status
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 15.47 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.51 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3388               92.0402 %
+Incorrectly Classified Instances       293                7.9598 %
+Kappa statistic                          0.8992
+Mean absolute error                      0.0312
+Root mean squared error                  0.1168
+Relative absolute error                 17.6665 %
+Root relative squared error             39.3429 %
+Total Number of Instances             3681     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.918    0.005    0.959      0.918    0.938      0.930    0.993     0.979     Firefighter
+                 0.950    0.005    0.963      0.950    0.957      0.951    0.998     0.988     Police Officer 3
+                 0.923    0.019    0.908      0.923    0.915      0.898    0.993     0.964     Registered Nurse
+                 0.967    0.036    0.939      0.967    0.952      0.925    0.995     0.992     Transit Operator
+                 0.951    0.008    0.873      0.951    0.910      0.906    0.998     0.969     Special Nurse
+                 0.688    0.013    0.827      0.688    0.751      0.735    0.979     0.859     Patient Care Assistant
+                 0.893    0.013    0.870      0.893    0.881      0.869    0.992     0.946     Custodian
+                 0.813    0.001    0.867      0.813    0.839      0.838    1.000     0.957     Public Svc Aide-Public Works
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.994     0.056     Recreation Leader
+Weighted Avg.    0.920    0.020    0.919      0.920    0.919      0.902    0.994     0.969     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i   <-- classified as
+  394    5   28    1    0    1    0    0    0 |    a = Firefighter
+    6  418   15    0    1    0    0    0    0 |    b = Police Officer 3
+   10   11  562    5    9    6    6    0    0 |    c = Registered Nurse
+    1    0    3 1303    7   24   10    0    0 |    d = Transit Operator
+    0    0    3    5  193    1    0    1    0 |    e = Special Nurse
+    0    0    8   51    4  205   29    1    0 |    f = Patient Care Assistant
+    0    0    0   19    7   10  300    0    0 |    g = Custodian
+    0    0    0    3    0    0    0   13    0 |    h = Public Svc Aide-Public Works
+    0    0    0    1    0    1    0    0    0 |    i = Recreation Leader
+

@@ -1,0 +1,751 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     newsal2-weka.filters.unsupervised.attribute.Remove-R1-2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Normalize-S10.0-T0.0
+Instances:    18405
+Attributes:   8
+              JobTitle
+              BasePay
+              OvertimePay
+              OtherPay
+              Benefits
+              TotalPay
+              TotalPayBenefits
+              Status
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: Firefighter, Police Officer 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        16.4469 * (normalized) BasePay
+ +      -4.0615 * (normalized) OvertimePay
+ +      -3.384  * (normalized) OtherPay
+ +     -21.3398 * (normalized) Benefits
+ +       5.8504 * (normalized) TotalPay
+ +       1.3155 * (normalized) TotalPayBenefits
+ +      -0.8608 * (normalized) Status=Other
+ +       0.3788 * (normalized) Status=FT
+ +       0.482  * (normalized) Status=PT
+ +       0.5246
+
+Number of kernel evaluations: 4001412 (67.783% cached)
+
+Classifier for classes: Firefighter, Registered Nurse
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.0715 * (normalized) BasePay
+ +     -14.5021 * (normalized) OvertimePay
+ +      -0.1883 * (normalized) OtherPay
+ +      -0.2155 * (normalized) Benefits
+ +      -3.8793 * (normalized) TotalPay
+ +      -3.4351 * (normalized) TotalPayBenefits
+ +      -0.0114 * (normalized) Status=Other
+ +      -0.9493 * (normalized) Status=FT
+ +       0.9607 * (normalized) Status=PT
+ +       0.8059
+
+Number of kernel evaluations: 1438605 (67.419% cached)
+
+Classifier for classes: Firefighter, Transit Operator
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -7.3145 * (normalized) BasePay
+ +       4.3713 * (normalized) OvertimePay
+ +      -4.281  * (normalized) OtherPay
+ +       3.5318 * (normalized) Benefits
+ +      -4.2172 * (normalized) TotalPay
+ +      -3.0624 * (normalized) TotalPayBenefits
+ +       0.3173 * (normalized) Status=Other
+ +       0.0901 * (normalized) Status=FT
+ +      -0.4074 * (normalized) Status=PT
+ +       3.7377
+
+Number of kernel evaluations: 1722620 (68.477% cached)
+
+Classifier for classes: Firefighter, Special Nurse
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         2.52   * (normalized) BasePay
+ +      -2.3436 * (normalized) OvertimePay
+ +      -1.7452 * (normalized) OtherPay
+ +      -5.6356 * (normalized) Benefits
+ +      -0.6996 * (normalized) TotalPay
+ +      -1.6179 * (normalized) TotalPayBenefits
+ +       0.3354 * (normalized) Status=Other
+ +      -0.7518 * (normalized) Status=FT
+ +       0.4163 * (normalized) Status=PT
+ +       1.5418
+
+Number of kernel evaluations: 86290 (68.094% cached)
+
+Classifier for classes: Firefighter, Patient Care Assistant
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -5.0835 * (normalized) BasePay
+ +       3.191  * (normalized) OvertimePay
+ +      -5.1948 * (normalized) OtherPay
+ +       0.4892 * (normalized) Benefits
+ +      -4.0104 * (normalized) TotalPay
+ +      -3.4242 * (normalized) TotalPayBenefits
+ +       0.1295 * (normalized) Status=Other
+ +       0.0152 * (normalized) Status=FT
+ +      -0.1448 * (normalized) Status=PT
+ +       4.7333
+
+Number of kernel evaluations: 232971 (69.205% cached)
+
+Classifier for classes: Firefighter, Custodian
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -4.6192 * (normalized) BasePay
+ +      -0.9569 * (normalized) OvertimePay
+ +      -2.8303 * (normalized) OtherPay
+ +       0.3458 * (normalized) Benefits
+ +      -4.787  * (normalized) TotalPay
+ +      -4.1297 * (normalized) TotalPayBenefits
+ +       0.1184 * (normalized) Status=Other
+ +       0.0853 * (normalized) Status=FT
+ +      -0.2036 * (normalized) Status=PT
+ +       4.4054
+
+Number of kernel evaluations: 210997 (76.939% cached)
+
+Classifier for classes: Firefighter, Public Svc Aide-Public Works
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.7442 * (normalized) BasePay
+ +      -0.3901 * (normalized) OvertimePay
+ +      -1.526  * (normalized) OtherPay
+ +       0.0056 * (normalized) Benefits
+ +      -2.6636 * (normalized) TotalPay
+ +      -2.3312 * (normalized) TotalPayBenefits
+ +      -0.1587 * (normalized) Status=Other
+ +      -0.0851 * (normalized) Status=FT
+ +       0.2438 * (normalized) Status=PT
+ +       1.6286
+
+Number of kernel evaluations: 15666 (70.256% cached)
+
+Classifier for classes: Firefighter, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.3502 * (normalized) BasePay
+ +      -0.2305 * (normalized) OvertimePay
+ +      -0.892  * (normalized) OtherPay
+ +      -2.0971 * (normalized) Benefits
+ +      -1.4059 * (normalized) TotalPay
+ +      -1.6051 * (normalized) TotalPayBenefits
+ +      -0.6637 * (normalized) Status=Other
+ +       0      * (normalized) Status=FT
+ +       0.6637 * (normalized) Status=PT
+ +       0.5227
+
+Number of kernel evaluations: 2100 (55.128% cached)
+
+Classifier for classes: Police Officer 3, Registered Nurse
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -6.3535 * (normalized) BasePay
+ +      -7.9659 * (normalized) OvertimePay
+ +       3.1955 * (normalized) OtherPay
+ +      13.9466 * (normalized) Benefits
+ +      -6.5463 * (normalized) TotalPay
+ +      -3.2437 * (normalized) TotalPayBenefits
+ +      -0.0867 * (normalized) Status=Other
+ +      -1.1886 * (normalized) Status=FT
+ +       1.2753 * (normalized) Status=PT
+ +       0.6347
+
+Number of kernel evaluations: 1778056 (64.363% cached)
+
+Classifier for classes: Police Officer 3, Transit Operator
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -5.9073 * (normalized) BasePay
+ +       3.7823 * (normalized) OvertimePay
+ +      -4.4159 * (normalized) OtherPay
+ +       3.3647 * (normalized) Benefits
+ +      -3.7692 * (normalized) TotalPay
+ +      -2.6999 * (normalized) TotalPayBenefits
+ +       0.2065 * (normalized) Status=Other
+ +       0.3273 * (normalized) Status=FT
+ +      -0.5338 * (normalized) Status=PT
+ +       3.269 
+
+Number of kernel evaluations: 1491438 (66.599% cached)
+
+Classifier for classes: Police Officer 3, Special Nurse
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         2.5818 * (normalized) BasePay
+ +      -1.7237 * (normalized) OvertimePay
+ +      -3.1728 * (normalized) OtherPay
+ +      -6.7834 * (normalized) Benefits
+ +      -1.0682 * (normalized) TotalPay
+ +      -2.1455 * (normalized) TotalPayBenefits
+ +       0.2933 * (normalized) Status=Other
+ +      -0.497  * (normalized) Status=FT
+ +       0.2036 * (normalized) Status=PT
+ +       2.0345
+
+Number of kernel evaluations: 146292 (68.501% cached)
+
+Classifier for classes: Police Officer 3, Patient Care Assistant
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -6.2815 * (normalized) BasePay
+ +       3.5883 * (normalized) OvertimePay
+ +      -4.148  * (normalized) OtherPay
+ +       4.5011 * (normalized) Benefits
+ +      -3.9606 * (normalized) TotalPay
+ +      -2.6648 * (normalized) TotalPayBenefits
+ +       0.177  * (normalized) Status=Other
+ +       0.0876 * (normalized) Status=FT
+ +      -0.2646 * (normalized) Status=PT
+ +       3.0929
+
+Number of kernel evaluations: 398991 (72.697% cached)
+
+Classifier for classes: Police Officer 3, Custodian
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -4.1637 * (normalized) BasePay
+ +       0.1904 * (normalized) OvertimePay
+ +      -3.8057 * (normalized) OtherPay
+ +       3.3167 * (normalized) Benefits
+ +      -4.3902 * (normalized) TotalPay
+ +      -3.2523 * (normalized) TotalPayBenefits
+ +       0.0999 * (normalized) Status=Other
+ +       0.2528 * (normalized) Status=FT
+ +      -0.3527 * (normalized) Status=PT
+ +       2.7221
+
+Number of kernel evaluations: 257055 (68.301% cached)
+
+Classifier for classes: Police Officer 3, Public Svc Aide-Public Works
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.6625 * (normalized) BasePay
+ +      -0.7205 * (normalized) OvertimePay
+ +      -2.5607 * (normalized) OtherPay
+ +       0.3492 * (normalized) Benefits
+ +      -3.3401 * (normalized) TotalPay
+ +      -2.8623 * (normalized) TotalPayBenefits
+ +      -0.1175 * (normalized) Status=Other
+ +       0.5366 * (normalized) Status=FT
+ +      -0.4191 * (normalized) Status=PT
+ +       1.9804
+
+Number of kernel evaluations: 14268 (69.357% cached)
+
+Classifier for classes: Police Officer 3, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.2249 * (normalized) BasePay
+ +      -0.8667 * (normalized) OvertimePay
+ +      -1.6266 * (normalized) OtherPay
+ +      -1.6058 * (normalized) Benefits
+ +      -2.0681 * (normalized) TotalPay
+ +      -2.0973 * (normalized) TotalPayBenefits
+ +       0.3657 * (normalized) Status=Other
+ +       0      * (normalized) Status=FT
+ +      -0.3657 * (normalized) Status=PT
+ +       0.7156
+
+Number of kernel evaluations: 8484 (58.786% cached)
+
+Classifier for classes: Registered Nurse, Transit Operator
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+       -10.4783 * (normalized) BasePay
+ +       8.2257 * (normalized) OvertimePay
+ +      -7.2688 * (normalized) OtherPay
+ +       9.02   * (normalized) Benefits
+ +      -5.5505 * (normalized) TotalPay
+ +      -3.2507 * (normalized) TotalPayBenefits
+ +      -0.249  * (normalized) Status=Other
+ +       1.0515 * (normalized) Status=FT
+ +      -0.8025 * (normalized) Status=PT
+ +       2.5691
+
+Number of kernel evaluations: 1992407 (66.129% cached)
+
+Classifier for classes: Registered Nurse, Special Nurse
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.3473 * (normalized) BasePay
+ +      -0.9907 * (normalized) OvertimePay
+ +      -0.2005 * (normalized) OtherPay
+ +     -11.2569 * (normalized) Benefits
+ +       1.356  * (normalized) TotalPay
+ +      -0.821  * (normalized) TotalPayBenefits
+ +       0.0884 * (normalized) Status=Other
+ +      -0.0884 * (normalized) Status=PT
+ +       1.5348
+
+Number of kernel evaluations: 190777 (67.124% cached)
+
+Classifier for classes: Registered Nurse, Patient Care Assistant
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -8.8306 * (normalized) BasePay
+ +       8.7176 * (normalized) OvertimePay
+ +      -7.1911 * (normalized) OtherPay
+ +       6.1872 * (normalized) Benefits
+ +      -4.2484 * (normalized) TotalPay
+ +      -2.616  * (normalized) TotalPayBenefits
+ +      -0.1483 * (normalized) Status=Other
+ +       0.6595 * (normalized) Status=FT
+ +      -0.5112 * (normalized) Status=PT
+ +       2.6933
+
+Number of kernel evaluations: 848841 (69.03% cached)
+
+Classifier for classes: Registered Nurse, Custodian
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -7.4206 * (normalized) BasePay
+ +       0.4767 * (normalized) OvertimePay
+ +      -5.9582 * (normalized) OtherPay
+ +       7.5564 * (normalized) Benefits
+ +      -7.3159 * (normalized) TotalPay
+ +      -5.0576 * (normalized) TotalPayBenefits
+ +      -0.0789 * (normalized) Status=Other
+ +       0.8974 * (normalized) Status=FT
+ +      -0.8185 * (normalized) Status=PT
+ +       2.9597
+
+Number of kernel evaluations: 418475 (71.83% cached)
+
+Classifier for classes: Registered Nurse, Public Svc Aide-Public Works
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -3.6063 * (normalized) BasePay
+ +      -0.2798 * (normalized) OvertimePay
+ +      -2.2169 * (normalized) OtherPay
+ +      -1.4176 * (normalized) Benefits
+ +      -3.4825 * (normalized) TotalPay
+ +      -3.3021 * (normalized) TotalPayBenefits
+ +      -0.7989 * (normalized) Status=Other
+ +       1.4455 * (normalized) Status=FT
+ +      -0.6466 * (normalized) Status=PT
+ +       1.9285
+
+Number of kernel evaluations: 17478 (63.375% cached)
+
+Classifier for classes: Registered Nurse, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2913 * (normalized) BasePay
+ +      -0.12   * (normalized) OvertimePay
+ +      -0.2684 * (normalized) OtherPay
+ +      -0.8131 * (normalized) Benefits
+ +      -0.3821 * (normalized) TotalPay
+ +      -0.4796 * (normalized) TotalPayBenefits
+ +       0.0173 * (normalized) Status=Other
+ +       0      * (normalized) Status=FT
+ +      -0.0173 * (normalized) Status=PT
+ -       0.8665
+
+Number of kernel evaluations: 20545 (52.441% cached)
+
+Classifier for classes: Transit Operator, Special Nurse
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         8.297  * (normalized) BasePay
+ +      -3.9023 * (normalized) OvertimePay
+ +       3.635  * (normalized) OtherPay
+ +     -12.5675 * (normalized) Benefits
+ +       4.7277 * (normalized) TotalPay
+ +       1.8974 * (normalized) TotalPayBenefits
+ +       0.6149 * (normalized) Status=Other
+ +      -0.9342 * (normalized) Status=FT
+ +       0.3193 * (normalized) Status=PT
+ -       1.037 
+
+Number of kernel evaluations: 719885 (66.444% cached)
+
+Classifier for classes: Transit Operator, Patient Care Assistant
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.211  * (normalized) BasePay
+ +      -1.4437 * (normalized) OvertimePay
+ +       1.1491 * (normalized) OtherPay
+ +      -3.454  * (normalized) Benefits
+ +       1.7313 * (normalized) TotalPay
+ +       0.8997 * (normalized) TotalPayBenefits
+ +      -0.0578 * (normalized) Status=Other
+ +       0.062  * (normalized) Status=FT
+ +      -0.0042 * (normalized) Status=PT
+ -       0.955 
+
+Number of kernel evaluations: 8313438 (81.961% cached)
+
+Classifier for classes: Transit Operator, Custodian
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.9698 * (normalized) BasePay
+ +     -11.345  * (normalized) OvertimePay
+ +       7.6571 * (normalized) OtherPay
+ +      -2.3205 * (normalized) Benefits
+ +       0.1209 * (normalized) TotalPay
+ +      -0.3081 * (normalized) TotalPayBenefits
+ +      -0.0432 * (normalized) Status=Other
+ +       0.2265 * (normalized) Status=FT
+ +      -0.1833 * (normalized) Status=PT
+ -       0.8034
+
+Number of kernel evaluations: 3991512 (70.251% cached)
+
+Classifier for classes: Transit Operator, Public Svc Aide-Public Works
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.01   * (normalized) BasePay
+ +       0.0096 * (normalized) OvertimePay
+ +      -0.0382 * (normalized) OtherPay
+ +       0.0005 * (normalized) Benefits
+ +      -0.0087 * (normalized) TotalPay
+ +      -0.0075 * (normalized) TotalPayBenefits
+ +      -0.0006 * (normalized) Status=Other
+ +       0.0003 * (normalized) Status=FT
+ +       0.0003 * (normalized) Status=PT
+ -       0.9994
+
+Number of kernel evaluations: 1089574 (63.233% cached)
+
+Classifier for classes: Transit Operator, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0743 * (normalized) BasePay
+ +      -0.0994 * (normalized) OvertimePay
+ +      -0.0469 * (normalized) OtherPay
+ +      -0.0501 * (normalized) Benefits
+ +      -0.035  * (normalized) TotalPay
+ +      -0.0396 * (normalized) TotalPayBenefits
+ +       0.0002 * (normalized) Status=Other
+ +      -0      * (normalized) Status=FT
+ +      -0.0002 * (normalized) Status=PT
+ -       0.9995
+
+Number of kernel evaluations: 87140 (56.908% cached)
+
+Classifier for classes: Special Nurse, Patient Care Assistant
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -3.5018 * (normalized) BasePay
+ +       1.6141 * (normalized) OvertimePay
+ +      -2.6762 * (normalized) OtherPay
+ +      10.8651 * (normalized) Benefits
+ +      -2.6125 * (normalized) TotalPay
+ +      -0.3491 * (normalized) TotalPayBenefits
+ +      -0.5389 * (normalized) Status=Other
+ +       0.9671 * (normalized) Status=FT
+ +      -0.4282 * (normalized) Status=PT
+ -       0.6297
+
+Number of kernel evaluations: 247610 (71.112% cached)
+
+Classifier for classes: Special Nurse, Custodian
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -3.3384 * (normalized) BasePay
+ +      -0.4711 * (normalized) OvertimePay
+ +      -1.7255 * (normalized) OtherPay
+ +      11.1053 * (normalized) Benefits
+ +      -3.1698 * (normalized) TotalPay
+ +      -0.7942 * (normalized) TotalPayBenefits
+ +      -0.59   * (normalized) Status=Other
+ +       1      * (normalized) Status=FT
+ +      -0.41   * (normalized) Status=PT
+ -       0.6333
+
+Number of kernel evaluations: 179267 (74.198% cached)
+
+Classifier for classes: Special Nurse, Public Svc Aide-Public Works
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.9386 * (normalized) BasePay
+ +      -0.1262 * (normalized) OvertimePay
+ +      -0.89   * (normalized) OtherPay
+ +       2.5966 * (normalized) Benefits
+ +      -1.1001 * (normalized) TotalPay
+ +      -0.5    * (normalized) TotalPayBenefits
+ +      -0.5135 * (normalized) Status=Other
+ +       0.9749 * (normalized) Status=FT
+ +      -0.4614 * (normalized) Status=PT
+ -       0.4943
+
+Number of kernel evaluations: 57546 (81.895% cached)
+
+Classifier for classes: Special Nurse, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0186 * (normalized) BasePay
+ +      -0.0541 * (normalized) OvertimePay
+ +       0.0051 * (normalized) OtherPay
+ +      -0.0213 * (normalized) Benefits
+ +      -0.0161 * (normalized) TotalPay
+ +      -0.0179 * (normalized) TotalPayBenefits
+ +       0.0005 * (normalized) Status=Other
+ +      -0.0005 * (normalized) Status=PT
+ -       0.9995
+
+Number of kernel evaluations: 19331 (54.459% cached)
+
+Classifier for classes: Patient Care Assistant, Custodian
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.1059 * (normalized) BasePay
+ +     -12.9064 * (normalized) OvertimePay
+ +       1.2105 * (normalized) OtherPay
+ +       4.782  * (normalized) Benefits
+ +      -6.444  * (normalized) TotalPay
+ +      -4.7891 * (normalized) TotalPayBenefits
+ +       0.5019 * (normalized) Status=Other
+ +       0.7361 * (normalized) Status=FT
+ +      -1.2379 * (normalized) Status=PT
+ +       0.7761
+
+Number of kernel evaluations: 915623 (71.875% cached)
+
+Classifier for classes: Patient Care Assistant, Public Svc Aide-Public Works
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.6938 * (normalized) BasePay
+ +      -0.2293 * (normalized) OvertimePay
+ +      -0.824  * (normalized) OtherPay
+ +      -0.7765 * (normalized) Benefits
+ +      -2.1762 * (normalized) TotalPay
+ +      -2.044  * (normalized) TotalPayBenefits
+ +      -0.5639 * (normalized) Status=Other
+ +       0.616  * (normalized) Status=FT
+ +      -0.0521 * (normalized) Status=PT
+ +       0.1373
+
+Number of kernel evaluations: 33449 (62.567% cached)
+
+Classifier for classes: Patient Care Assistant, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0558 * (normalized) BasePay
+ +      -0.0344 * (normalized) OvertimePay
+ +      -0.0297 * (normalized) OtherPay
+ +      -0.0514 * (normalized) Benefits
+ +      -0.0681 * (normalized) TotalPay
+ +      -0.0688 * (normalized) TotalPayBenefits
+ +       0.0006 * (normalized) Status=Other
+ +       0      * (normalized) Status=FT
+ +      -0.0006 * (normalized) Status=PT
+ -       0.9928
+
+Number of kernel evaluations: 11296 (54.072% cached)
+
+Classifier for classes: Custodian, Public Svc Aide-Public Works
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -3.2237 * (normalized) BasePay
+ +       0.4608 * (normalized) OvertimePay
+ +      -1.0075 * (normalized) OtherPay
+ +      -0.9871 * (normalized) Benefits
+ +      -2.2086 * (normalized) TotalPay
+ +      -2.1099 * (normalized) TotalPayBenefits
+ +      -0.4671 * (normalized) Status=Other
+ +       0.6393 * (normalized) Status=FT
+ +      -0.1722 * (normalized) Status=PT
+ +       0.2175
+
+Number of kernel evaluations: 61832 (56.745% cached)
+
+Classifier for classes: Custodian, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0941 * (normalized) BasePay
+ +      -0.0391 * (normalized) OvertimePay
+ +      -0.0846 * (normalized) OtherPay
+ +      -0.1887 * (normalized) Benefits
+ +      -0.1225 * (normalized) TotalPay
+ +      -0.1409 * (normalized) TotalPayBenefits
+ +      -0      * (normalized) Status=Other
+ +      -0      * (normalized) Status=FT
+ +       0      * (normalized) Status=PT
+ -       0.9772
+
+Number of kernel evaluations: 12132 (65.043% cached)
+
+Classifier for classes: Public Svc Aide-Public Works, Recreation Leader
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0122 * (normalized) BasePay
+ +      -0.0044 * (normalized) OvertimePay
+ +      -0.0034 * (normalized) OtherPay
+ +      -0.0108 * (normalized) Benefits
+ +       0.0031 * (normalized) TotalPay
+ +       0.0008 * (normalized) TotalPayBenefits
+ +       0.0004 * (normalized) Status=Other
+ +      -0.0001 * (normalized) Status=FT
+ +      -0.0003 * (normalized) Status=PT
+ -       1.0007
+
+Number of kernel evaluations: 1323 (56.423% cached)
+
+
+
+Time taken to build model: 25.51 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.05 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2648               71.937  %
+Incorrectly Classified Instances      1033               28.063  %
+Kappa statistic                          0.6203
+Mean absolute error                      0.1754
+Root mean squared error                  0.2858
+Relative absolute error                 99.1564 %
+Root relative squared error             96.272  %
+Total Number of Instances             3681     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.697    0.005    0.946      0.697    0.803      0.792    0.959     0.797     Firefighter
+                 0.866    0.027    0.814      0.866    0.839      0.817    0.968     0.758     Police Officer 3
+                 0.800    0.057    0.736      0.800    0.766      0.719    0.927     0.689     Registered Nurse
+                 0.987    0.305    0.652      0.987    0.785      0.661    0.846     0.653     Transit Operator
+                 0.739    0.012    0.781      0.739    0.759      0.746    0.986     0.710     Special Nurse
+                 0.000    0.000    0.000      0.000    0.000      -0.005   0.734     0.144     Patient Care Assistant
+                 0.003    0.000    1.000      0.003    0.006      0.052    0.865     0.278     Custodian
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.951     0.066     Public Svc Aide-Public Works
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.946     0.006     Recreation Leader
+Weighted Avg.    0.719    0.126    0.702      0.719    0.651      0.596    0.888     0.613     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i   <-- classified as
+  299    8  110   12    0    0    0    0    0 |    a = Firefighter
+   11  381   45    1    2    0    0    0    0 |    b = Police Officer 3
+    6   79  487   30    7    0    0    0    0 |    c = Registered Nurse
+    0    0    6 1330   11    1    0    0    0 |    d = Transit Operator
+    0    0    2   51  150    0    0    0    0 |    e = Special Nurse
+    0    0   11  276   11    0    0    0    0 |    f = Patient Care Assistant
+    0    0    1  326    8    0    1    0    0 |    g = Custodian
+    0    0    0   14    2    0    0    0    0 |    h = Public Svc Aide-Public Works
+    0    0    0    1    1    0    0    0    0 |    i = Recreation Leader
+

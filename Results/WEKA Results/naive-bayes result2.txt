@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     newsal2-weka.filters.unsupervised.attribute.Remove-R1-2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Normalize-S10.0-T0.0
+Instances:    18405
+Attributes:   8
+              JobTitle
+              BasePay
+              OvertimePay
+              OtherPay
+              Benefits
+              TotalPay
+              TotalPayBenefits
+              Status
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=0
+Network structure (nodes followed by parents)
+JobTitle(9): 
+BasePay(60): JobTitle 
+OvertimePay(23): JobTitle 
+OtherPay(34): JobTitle 
+Benefits(39): JobTitle 
+TotalPay(18): JobTitle 
+TotalPayBenefits(18): JobTitle 
+Status(3): JobTitle 
+LogScore Bayes: -303572.33814252476
+LogScore BDeu: -314087.2182768789
+LogScore MDL: -312977.1684801952
+LogScore ENTROPY: -304629.84748125396
+LogScore AIC: -306329.84748125396
+
+
+Time taken to build model: 0.24 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2759               74.9525 %
+Incorrectly Classified Instances       922               25.0475 %
+Kappa statistic                          0.6955
+Mean absolute error                      0.0579
+Root mean squared error                  0.2059
+Relative absolute error                 32.7178 %
+Root relative squared error             69.3565 %
+Total Number of Instances             3681     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.841    0.011    0.909      0.841    0.874      0.859    0.985     0.943     Firefighter
+                 0.880    0.010    0.919      0.880    0.899      0.886    0.984     0.950     Police Officer 3
+                 0.841    0.034    0.830      0.841    0.835      0.802    0.959     0.886     Registered Nurse
+                 0.682    0.040    0.908      0.682    0.779      0.693    0.951     0.925     Transit Operator
+                 0.665    0.055    0.413      0.665    0.509      0.489    0.959     0.595     Special Nurse
+                 0.523    0.058    0.443      0.523    0.480      0.432    0.914     0.587     Patient Care Assistant
+                 0.821    0.036    0.695      0.821    0.753      0.729    0.977     0.867     Custodian
+                 0.750    0.037    0.081      0.750    0.146      0.239    0.982     0.409     Public Svc Aide-Public Works
+                 0.000    0.002    0.000      0.000    0.000      -0.001   0.948     0.019     Recreation Leader
+Weighted Avg.    0.750    0.034    0.808      0.750    0.769      0.722    0.960     0.870     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   <-- classified as
+ 361  10  48   9   1   0   0   0   0 |   a = Firefighter
+  13 387  27   5   6   2   0   0   0 |   b = Police Officer 3
+  10  15 512  21  25  18   8   0   0 |   c = Registered Nurse
+  12   8   8 920 106 143  49  97   5 |   d = Transit Operator
+   1   1  22   9 135   4   3  27   1 |   e = Special Nurse
+   0   0   0  42  32 156  61   5   2 |   f = Patient Care Assistant
+   0   0   0   3  22  29 276   5   1 |   g = Custodian
+   0   0   0   4   0   0   0  12   0 |   h = Public Svc Aide-Public Works
+   0   0   0   0   0   0   0   2   0 |   i = Recreation Leader
+

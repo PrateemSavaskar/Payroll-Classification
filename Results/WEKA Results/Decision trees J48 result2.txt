@@ -1,0 +1,1479 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     newsal2-weka.filters.unsupervised.attribute.Remove-R1-2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Normalize-S10.0-T0.0
+Instances:    18405
+Attributes:   8
+              JobTitle
+              BasePay
+              OvertimePay
+              OtherPay
+              Benefits
+              TotalPay
+              TotalPayBenefits
+              Status
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+BasePay <= 4.13968
+|   Benefits <= 4.926702
+|   |   Benefits <= 3.916191
+|   |   |   TotalPay <= 1.952591
+|   |   |   |   Benefits <= 1.859137
+|   |   |   |   |   OtherPay <= 0.034989
+|   |   |   |   |   |   BasePay <= 1.367608
+|   |   |   |   |   |   |   OvertimePay <= 0.010418
+|   |   |   |   |   |   |   |   OvertimePay <= 0.008553
+|   |   |   |   |   |   |   |   |   TotalPayBenefits <= 0.60947
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 0.046266: Transit Operator (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 0.046266
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.140896
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.003406
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.00272
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.002508: Recreation Leader (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.002508: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.00272
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.003032: Special Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.003032: Recreation Leader (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.003406
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.114588
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.010367
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.007285: Public Svc Aide-Public Works (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.007285: Custodian (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.010367: Recreation Leader (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.114588: Special Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 0.140896
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.772906
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.336364
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.003852: Transit Operator (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.003852
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.138041: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.138041
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.010028
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.215336: Special Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.215336: Recreation Leader (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.010028: Special Nurse (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.336364: Transit Operator (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.772906: Public Svc Aide-Public Works (3.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPayBenefits > 0.60947
+|   |   |   |   |   |   |   |   |   |   Benefits <= 1.615247
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.001888: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.001888: Custodian (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 1.615247: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   OvertimePay > 0.008553
+|   |   |   |   |   |   |   |   |   TotalPayBenefits <= 0.039263: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   TotalPayBenefits > 0.039263
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.009775
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.009469: Transit Operator (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.009469
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.009588: Public Svc Aide-Public Works (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.009588
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.009654: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.009654: Public Svc Aide-Public Works (11.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.009775: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Public Svc Aide-Public Works (0.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT: Public Svc Aide-Public Works (29.0/2.0)
+|   |   |   |   |   |   |   OvertimePay > 0.010418
+|   |   |   |   |   |   |   |   Benefits <= 0.444572
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.003476
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.019258
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.000947: Special Nurse (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.000947: Transit Operator (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.019258
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.692696: Special Nurse (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.692696
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.073949: Special Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.073949: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Transit Operator (0.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.033762
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.047196: Public Svc Aide-Public Works (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.047196: Special Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 0.033762: Transit Operator (72.0/2.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.003476
+|   |   |   |   |   |   |   |   |   |   Benefits <= 0.03438
+|   |   |   |   |   |   |   |   |   |   |   TotalPay <= 0.23254: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPay > 0.23254
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.039494: Patient Care Assistant (10.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.039494
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.011484: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.011484: Special Nurse (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 0.03438
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.019155
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.149917: Special Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.149917: Custodian (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.019155
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.716569
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.268457
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.102889: Special Nurse (24.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.102889
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.015264: Special Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.015264: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.268457
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.012732: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.012732
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.364448: Special Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.364448
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.477332: Registered Nurse (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.477332: Special Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.716569
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = Other: Patient Care Assistant (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Special Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = PT: Special Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   Benefits > 0.444572
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.000517
+|   |   |   |   |   |   |   |   |   |   BasePay <= 1.152614
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 1.558881: Patient Care Assistant (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 1.558881: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 1.152614: Special Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.000517
+|   |   |   |   |   |   |   |   |   |   BasePay <= 0.950116
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.006275
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.003404: Transit Operator (158.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.003404
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.33022: Public Svc Aide-Public Works (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.33022: Transit Operator (43.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.006275
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.661855
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.644147: Transit Operator (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.644147: Special Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.661855
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.010784
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.010436
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = Other: Transit Operator (25.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Transit Operator (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.02815: Custodian (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.02815
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.006831: Custodian (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.006831: Transit Operator (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.010436: Custodian (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.010784: Transit Operator (120.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 0.950116
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 1.292738
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 0.656244: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 0.656244
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.89452
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.047545: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.047545: Special Nurse (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.89452
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 0.763005
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.137741: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.137741: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 0.763005
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.327761: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.327761: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 1.292738
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.952577: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.952577: Transit Operator (59.0/6.0)
+|   |   |   |   |   |   BasePay > 1.367608
+|   |   |   |   |   |   |   TotalPay <= 0.932456
+|   |   |   |   |   |   |   |   BasePay <= 1.410843: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   BasePay > 1.410843: Firefighter (15.0)
+|   |   |   |   |   |   |   TotalPay > 0.932456
+|   |   |   |   |   |   |   |   TotalPay <= 1.214797
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.031349: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.031349
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 1.091764: Special Nurse (7.0/4.0)
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 1.091764: Custodian (6.0/1.0)
+|   |   |   |   |   |   |   |   TotalPay > 1.214797
+|   |   |   |   |   |   |   |   |   BasePay <= 2.214489
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.018518: Special Nurse (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.018518: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   BasePay > 2.214489: Special Nurse (16.0)
+|   |   |   |   |   OtherPay > 0.034989
+|   |   |   |   |   |   BasePay <= 1.490996
+|   |   |   |   |   |   |   Benefits <= 1.172203
+|   |   |   |   |   |   |   |   OtherPay <= 0.314563
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.026168
+|   |   |   |   |   |   |   |   |   |   Benefits <= 0.426642
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.459349
+|   |   |   |   |   |   |   |   |   |   |   |   Status = Other: Special Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Special Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.00827: Special Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.00827: Public Svc Aide-Public Works (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 0.459349
+|   |   |   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.001911: Patient Care Assistant (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.001911
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.12579: Patient Care Assistant (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.12579
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.009775
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.606275: Special Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.606275: Custodian (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.009775
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.084356: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.084356
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.286572: Custodian (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.286572: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.011222
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.00931: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.00931: Public Svc Aide-Public Works (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.011222: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 0.426642
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.576249
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.012753: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.012753: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 0.576249
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.893633: Special Nurse (32.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.893633
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = Other: Special Nurse (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Special Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = PT: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.026168
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.067413
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.043347
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.537455: Special Nurse (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.537455: Custodian (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.043347
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.049469
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.068202
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.954214: Special Nurse (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.954214: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.068202
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 0.395395: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 0.395395
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.032967: Special Nurse (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.032967
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.70311: Custodian (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.70311: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Custodian (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = PT: Special Nurse (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.049469: Special Nurse (60.0/4.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.067413
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.316551
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.226678
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.272178
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 0.863272: Special Nurse (30.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 0.863272: Transit Operator (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.272178: Special Nurse (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.226678
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.185033
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.936708: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.936708: Special Nurse (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.185033: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 0.316551
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 1.046623
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.312775
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.091991
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 0.910301
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.762007
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.084842: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.084842: Special Nurse (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.762007
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.662124: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.662124: Registered Nurse (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Special Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 0.299455: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 0.299455: Special Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 0.910301: Custodian (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.091991: Special Nurse (56.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.312775: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 1.046623: Transit Operator (7.0/1.0)
+|   |   |   |   |   |   |   |   OtherPay > 0.314563
+|   |   |   |   |   |   |   |   |   TotalPay <= 0.702183
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.488264
+|   |   |   |   |   |   |   |   |   |   |   Status = Other: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = FT: Transit Operator (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.141395: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.141395: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.488264
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.408589: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 0.408589
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 0.758624: Patient Care Assistant (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 0.758624: Transit Operator (2.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 0.702183
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.262693
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.059251
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.412408: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.412408: Police Officer 3 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.059251
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.041212: Registered Nurse (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.041212
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.21716: Special Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.21716: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.262693
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.336486: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 0.336486: Firefighter (3.0)
+|   |   |   |   |   |   |   Benefits > 1.172203
+|   |   |   |   |   |   |   |   OvertimePay <= 0.066252
+|   |   |   |   |   |   |   |   |   BasePay <= 1.01788
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.3811
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.817541
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 0.743653: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 0.743653: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 0.817541
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.020199: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.020199: Patient Care Assistant (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.3811: Custodian (4.0)
+|   |   |   |   |   |   |   |   |   BasePay > 1.01788
+|   |   |   |   |   |   |   |   |   |   Benefits <= 1.380813
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.947623: Registered Nurse (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.947623: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 1.380813
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.040756
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 1.604824: Patient Care Assistant (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 1.604824: Custodian (4.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.040756: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   |   OvertimePay > 0.066252
+|   |   |   |   |   |   |   |   |   Benefits <= 1.279547
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.054701: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.054701
+|   |   |   |   |   |   |   |   |   |   |   Status = Other: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = FT: Police Officer 3 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.206016: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.206016: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   Benefits > 1.279547
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.099229: Transit Operator (32.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.099229
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.223376
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.19305
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 1.523756: Patient Care Assistant (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 1.523756: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.194737: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.194737: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.19305
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.220217: Firefighter (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.220217: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.223376: Transit Operator (13.0/1.0)
+|   |   |   |   |   |   BasePay > 1.490996
+|   |   |   |   |   |   |   OvertimePay <= 0.13403
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   TotalPay <= 1.167771
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 0.948564: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 0.948564
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 1.354549
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.060428: Special Nurse (17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.060428
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.158746: Patient Care Assistant (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.158746: Special Nurse (6.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 1.354549: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 1.167771: Special Nurse (122.0/4.0)
+|   |   |   |   |   |   |   |   Status = FT: Public Svc Aide-Public Works (1.0)
+|   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   Benefits <= 0.784301: Special Nurse (32.0)
+|   |   |   |   |   |   |   |   |   Benefits > 0.784301
+|   |   |   |   |   |   |   |   |   |   Benefits <= 1.571102
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.084696
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.069196
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.110041: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.110041
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.010529: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.010529: Special Nurse (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.069196
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.620708: Police Officer 3 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.620708: Registered Nurse (4.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.084696: Special Nurse (15.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 1.571102: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   OvertimePay > 0.13403
+|   |   |   |   |   |   |   |   BasePay <= 2.111449
+|   |   |   |   |   |   |   |   |   Benefits <= 1.36475
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.360622: Special Nurse (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.360622: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Special Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 1.218312: Special Nurse (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 1.218312: Registered Nurse (6.0/2.0)
+|   |   |   |   |   |   |   |   |   Benefits > 1.36475
+|   |   |   |   |   |   |   |   |   |   Benefits <= 1.74377
+|   |   |   |   |   |   |   |   |   |   |   Status = Other: Transit Operator (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = FT: Transit Operator (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.069284: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.069284: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 1.74377: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   BasePay > 2.111449
+|   |   |   |   |   |   |   |   |   Benefits <= 1.037451: Special Nurse (21.0)
+|   |   |   |   |   |   |   |   |   Benefits > 1.037451
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.410165
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.172748
+|   |   |   |   |   |   |   |   |   |   |   |   Status = Other: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Status = FT: Registered Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Status = PT: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.172748: Special Nurse (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.410165: Patient Care Assistant (4.0)
+|   |   |   |   Benefits > 1.859137
+|   |   |   |   |   OvertimePay <= 0.106855
+|   |   |   |   |   |   OtherPay <= 0.097617
+|   |   |   |   |   |   |   BasePay <= 1.62577
+|   |   |   |   |   |   |   |   Benefits <= 2.815661
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.002901
+|   |   |   |   |   |   |   |   |   |   Benefits <= 2.238331: Custodian (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 2.238331: Public Svc Aide-Public Works (2.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.002901
+|   |   |   |   |   |   |   |   |   |   Status = Other: Transit Operator (53.0/8.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Transit Operator (0.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.047974
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.036628: Transit Operator (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.036628
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.056442: Public Svc Aide-Public Works (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.056442: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.047974
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.150127: Transit Operator (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.150127
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.06878: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.06878
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.200926: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.200926: Transit Operator (7.0/1.0)
+|   |   |   |   |   |   |   |   Benefits > 2.815661: Public Svc Aide-Public Works (5.0)
+|   |   |   |   |   |   |   BasePay > 1.62577
+|   |   |   |   |   |   |   |   BasePay <= 2.609789
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.040943
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.039342
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.033734
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.017422
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.049483
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 1.067338: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 1.067338: Transit Operator (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.049483: Custodian (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.017422
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.150808
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.02536: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.02536: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.150808: Transit Operator (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.033734: Custodian (7.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.039342: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.63554
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.830839: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.830839: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 2.63554
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.825064: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 2.825064
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.638012
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.226675
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.956205
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.01085: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.01085: Custodian (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 2.956205: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.226675: Custodian (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.638012
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.335906: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.335906: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.040943
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.072107
+|   |   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.661777
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.011151
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.004361: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.004361: Custodian (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.011151
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.508731: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 2.508731
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.888815: Transit Operator (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.888815
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.146703
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.055866
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.053718: Transit Operator (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.053718: Custodian (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.055866: Custodian (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.146703: Transit Operator (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.661777: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = FT: Custodian (1.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 1.190011
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.652234: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.652234: Patient Care Assistant (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 1.190011
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 1.409281
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.168398: Transit Operator (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.168398
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.387572: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.387572: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 1.409281
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.019423: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.019423: Transit Operator (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.072107: Patient Care Assistant (14.0/4.0)
+|   |   |   |   |   |   |   |   BasePay > 2.609789
+|   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.284048: Custodian (21.0/6.0)
+|   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.284048: Patient Care Assistant (2.0)
+|   |   |   |   |   |   OtherPay > 0.097617
+|   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   Benefits <= 2.456208
+|   |   |   |   |   |   |   |   |   TotalPay <= 1.436319
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.39365
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.26567
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.150549
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.410843: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.410843
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.131309: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.131309: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.150549
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.848954: Registered Nurse (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.848954: Patient Care Assistant (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 2.26567: Patient Care Assistant (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.39365: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 1.436319
+|   |   |   |   |   |   |   |   |   |   Benefits <= 2.134254
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.055779: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.055779: Special Nurse (4.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 2.134254: Registered Nurse (4.0)
+|   |   |   |   |   |   |   |   Benefits > 2.456208
+|   |   |   |   |   |   |   |   |   TotalPay <= 1.358718: Custodian (38.0/6.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 1.358718
+|   |   |   |   |   |   |   |   |   |   Benefits <= 3.481842
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.081757
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.042446
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.238162: Custodian (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.238162: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.042446: Registered Nurse (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.081757
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.785068: Custodian (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.785068
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.146703: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.146703: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 3.481842
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.212576: Custodian (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.212576
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.252046: Patient Care Assistant (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.252046: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   Status = FT: Custodian (8.0)
+|   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   OvertimePay <= 0.066017
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.003091: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.003091: Custodian (37.0/11.0)
+|   |   |   |   |   |   |   |   OvertimePay > 0.066017
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.569041
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.078705
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.226675: Patient Care Assistant (7.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.226675
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.198193: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.198193: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.078705
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.103252
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.212885: Custodian (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.212885: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.103252: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.569041: Police Officer 3 (3.0/2.0)
+|   |   |   |   |   OvertimePay > 0.106855
+|   |   |   |   |   |   OtherPay <= 0.16189
+|   |   |   |   |   |   |   BasePay <= 2.547865
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   Benefits <= 2.498955
+|   |   |   |   |   |   |   |   |   |   BasePay <= 1.519844: Transit Operator (37.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 1.519844
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.095475
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.075197
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.036686
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.592252: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.592252: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.036686: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 2.075197
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.785449: Transit Operator (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.785449
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.014666: Patient Care Assistant (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.014666: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.095475
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.932981: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.932981: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   Benefits > 2.498955
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.020192
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.016256
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.006394: Custodian (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.006394: Transit Operator (26.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.016256
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.016472: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.016472
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.867564
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.082269: Transit Operator (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.082269: Public Svc Aide-Public Works (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.867564: Transit Operator (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.020192: Transit Operator (239.0/12.0)
+|   |   |   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   |   |   BasePay <= 2.151063: Public Svc Aide-Public Works (6.0)
+|   |   |   |   |   |   |   |   |   BasePay > 2.151063: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.019925
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.016256: Transit Operator (21.0/2.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.016256
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.016764: Patient Care Assistant (11.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.016764: Transit Operator (22.0/9.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.019925
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.108758: Transit Operator (163.0/11.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.108758
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.447935: Patient Care Assistant (6.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 1.447935
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.136506: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.136506
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.338249: Patient Care Assistant (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 2.338249: Transit Operator (15.0)
+|   |   |   |   |   |   |   BasePay > 2.547865
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.162678
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.134971: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.134971: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.162678
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.081413
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.016548
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.014702: Transit Operator (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.014702: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.016548
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.055378
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.276334: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 2.276334: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.055378: Transit Operator (18.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.081413
+|   |   |   |   |   |   |   |   |   |   |   TotalPay <= 1.856969
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.106543: Patient Care Assistant (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.106543: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPay > 1.856969: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   Status = FT: Custodian (2.0)
+|   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   TotalPay <= 1.809358: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 1.809358
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.327448: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.327448: Custodian (2.0)
+|   |   |   |   |   |   OtherPay > 0.16189
+|   |   |   |   |   |   |   OvertimePay <= 0.266464
+|   |   |   |   |   |   |   |   OtherPay <= 0.283227
+|   |   |   |   |   |   |   |   |   TotalPay <= 1.40205
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.820643: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 2.820643: Transit Operator (5.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Transit Operator (0.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.865533: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 1.865533: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 1.40205
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.150783
+|   |   |   |   |   |   |   |   |   |   |   TotalPay <= 1.687481: Patient Care Assistant (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPay > 1.687481: Custodian (4.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.150783
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.172745
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.366262: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.366262: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.172745: Patient Care Assistant (28.0/4.0)
+|   |   |   |   |   |   |   |   OtherPay > 0.283227
+|   |   |   |   |   |   |   |   |   TotalPay <= 1.809738
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.787506
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.233798
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 1.695218
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.656861: Transit Operator (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.656861: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 1.695218: Registered Nurse (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.233798: Firefighter (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 2.787506
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.134319
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 2.87457: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 2.87457: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.134319: Patient Care Assistant (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Registered Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT: Custodian (6.0/3.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 1.809738
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.444539
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.638922: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.638922: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.444539: Registered Nurse (9.0)
+|   |   |   |   |   |   |   OvertimePay > 0.266464
+|   |   |   |   |   |   |   |   Status = Other: Transit Operator (44.0/9.0)
+|   |   |   |   |   |   |   |   Status = FT: Transit Operator (0.0)
+|   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   Benefits <= 3.071103: Transit Operator (15.0/2.0)
+|   |   |   |   |   |   |   |   |   Benefits > 3.071103
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.206252: Patient Care Assistant (5.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.206252
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.25655: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.25655: Patient Care Assistant (2.0)
+|   |   |   TotalPay > 1.952591
+|   |   |   |   Benefits <= 2.232291
+|   |   |   |   |   OtherPay <= 1.429374
+|   |   |   |   |   |   OvertimePay <= 1.046884
+|   |   |   |   |   |   |   Benefits <= 1.838978: Special Nurse (158.0)
+|   |   |   |   |   |   |   Benefits > 1.838978
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.653873: Special Nurse (17.0/2.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.653873: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   Status = FT: Special Nurse (0.0)
+|   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   BasePay <= 3.446762: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   |   BasePay > 3.446762: Special Nurse (3.0)
+|   |   |   |   |   |   OvertimePay > 1.046884: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   OtherPay > 1.429374: Police Officer 3 (22.0/3.0)
+|   |   |   |   Benefits > 2.232291
+|   |   |   |   |   OtherPay <= 0.993953
+|   |   |   |   |   |   OvertimePay <= 0.476272
+|   |   |   |   |   |   |   OtherPay <= 0.308992
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   TotalPay <= 2.105685
+|   |   |   |   |   |   |   |   |   |   Benefits <= 2.793261
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.154265: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 3.154265: Special Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 2.793261
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.204759: Patient Care Assistant (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.204759
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.104162: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 3.104162: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 2.105685
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.082961
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.263083
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.490072: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 3.490072: Patient Care Assistant (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 3.263083: Transit Operator (6.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.082961
+|   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.353937: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.353937
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.81136: Registered Nurse (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 3.81136
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.953047
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.083293: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.083293: Transit Operator (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 3.953047: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   |   |   Benefits <= 2.556637: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   Benefits > 2.556637: Transit Operator (12.0)
+|   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   Benefits <= 2.42277: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Benefits > 2.42277
+|   |   |   |   |   |   |   |   |   |   BasePay <= 3.031008: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 3.031008: Registered Nurse (17.0/1.0)
+|   |   |   |   |   |   |   OtherPay > 0.308992
+|   |   |   |   |   |   |   |   Benefits <= 2.807258
+|   |   |   |   |   |   |   |   |   TotalPay <= 2.150497: Registered Nurse (4.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 2.150497
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.303893: Special Nurse (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.303893: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   Benefits > 2.807258
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.513926
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.331466
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.581622
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.106524: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 3.106524: Firefighter (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.581622: Registered Nurse (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.331466: Police Officer 3 (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Registered Nurse (0.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 3.053525: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 3.053525: Registered Nurse (5.0/1.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.513926
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.40743: Registered Nurse (34.0/4.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.40743: Police Officer 3 (2.0/1.0)
+|   |   |   |   |   |   OvertimePay > 0.476272
+|   |   |   |   |   |   |   OtherPay <= 0.536609
+|   |   |   |   |   |   |   |   BasePay <= 3.085422
+|   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.778939: Transit Operator (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.778939: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   |   BasePay <= 2.474726
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.318374
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 1.424732: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 1.424732: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.318374: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 2.474726: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   BasePay > 3.085422: Transit Operator (46.0/3.0)
+|   |   |   |   |   |   |   OtherPay > 0.536609
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   BasePay <= 2.680417: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   BasePay > 2.680417: Firefighter (5.0/1.0)
+|   |   |   |   |   |   |   |   Status = FT: Firefighter (0.0)
+|   |   |   |   |   |   |   |   Status = PT: Patient Care Assistant (2.0/1.0)
+|   |   |   |   |   OtherPay > 0.993953
+|   |   |   |   |   |   Benefits <= 3.464002
+|   |   |   |   |   |   |   BasePay <= 2.506253
+|   |   |   |   |   |   |   |   BasePay <= 2.112856: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   BasePay > 2.112856
+|   |   |   |   |   |   |   |   |   OtherPay <= 3.821409: Firefighter (3.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 3.821409: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   BasePay > 2.506253
+|   |   |   |   |   |   |   |   BasePay <= 3.96335
+|   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.984843
+|   |   |   |   |   |   |   |   |   |   Benefits <= 2.733437
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.698222: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.698222: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 2.733437: Police Officer 3 (3.0)
+|   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.984843: Police Officer 3 (52.0)
+|   |   |   |   |   |   |   |   BasePay > 3.96335: Registered Nurse (2.0)
+|   |   |   |   |   |   Benefits > 3.464002
+|   |   |   |   |   |   |   TotalPay <= 3.836705
+|   |   |   |   |   |   |   |   Benefits <= 3.580409: Firefighter (2.0)
+|   |   |   |   |   |   |   |   Benefits > 3.580409: Registered Nurse (8.0)
+|   |   |   |   |   |   |   TotalPay > 3.836705: Firefighter (8.0/1.0)
+|   |   Benefits > 3.916191
+|   |   |   BasePay <= 3.177943
+|   |   |   |   OvertimePay <= 0.207158
+|   |   |   |   |   TotalPay <= 1.651358
+|   |   |   |   |   |   OvertimePay <= 0.110171
+|   |   |   |   |   |   |   TotalPay <= 1.596897
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   TotalPay <= 1.522248
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 1.462787: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 1.462787: Patient Care Assistant (8.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 1.522248
+|   |   |   |   |   |   |   |   |   |   BasePay <= 2.625769: Custodian (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 2.625769: Transit Operator (2.0/1.0)
+|   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (1.0)
+|   |   |   |   |   |   |   |   Status = PT: Patient Care Assistant (4.0/1.0)
+|   |   |   |   |   |   |   TotalPay > 1.596897: Custodian (20.0/2.0)
+|   |   |   |   |   |   OvertimePay > 0.110171
+|   |   |   |   |   |   |   OtherPay <= 0.220034
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.134463: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.134463
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.017073: Patient Care Assistant (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.017073: Transit Operator (24.0/2.0)
+|   |   |   |   |   |   |   |   Status = FT: Transit Operator (2.0/1.0)
+|   |   |   |   |   |   |   |   Status = PT: Transit Operator (4.0)
+|   |   |   |   |   |   |   OtherPay > 0.220034: Patient Care Assistant (5.0)
+|   |   |   |   |   TotalPay > 1.651358
+|   |   |   |   |   |   BasePay <= 3.139003
+|   |   |   |   |   |   |   BasePay <= 3.089847
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   Benefits <= 4.42169
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 2.006642
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.073562
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.184584: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.184584: Custodian (46.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.073562
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.000463: Custodian (15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.000463
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.178103
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.017742: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.017742
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.039417: Transit Operator (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.039417
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.096944
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.913678: Patient Care Assistant (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.913678: Custodian (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.096944
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 2.437082
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.802627
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.14015
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.642209: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.642209: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.14015: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.802627: Transit Operator (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 2.437082: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.178103
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.043257: Patient Care Assistant (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.043257
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.419067: Custodian (27.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.419067: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 2.006642
+|   |   |   |   |   |   |   |   |   |   |   TotalPay <= 2.128209: Patient Care Assistant (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPay > 2.128209: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Benefits > 4.42169
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.113309
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.836836
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.919977
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.579829: Custodian (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.579829
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.87655: Transit Operator (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.87655: Custodian (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.919977: Custodian (100.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 4.836836: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.113309: Custodian (364.0/9.0)
+|   |   |   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.067148: Custodian (48.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.067148
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 1.826593
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.660631
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.5781
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.186832: Custodian (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.186832: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.5781: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 4.660631: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 1.826593
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.316351: Custodian (122.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.316351: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   Status = PT
+|   |   |   |   |   |   |   |   |   Benefits <= 4.186456
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.036743
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.761032: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.761032: Patient Care Assistant (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.036743
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.764621
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.50036: Custodian (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.50036: Patient Care Assistant (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.764621: Custodian (10.0)
+|   |   |   |   |   |   |   |   |   Benefits > 4.186456
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.083192: Transit Operator (14.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.083192
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.086624: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.086624: Patient Care Assistant (13.0/2.0)
+|   |   |   |   |   |   |   BasePay > 3.089847
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   Benefits <= 4.41682
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.110468: Custodian (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.110468
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.107318: Custodian (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 3.107318: Patient Care Assistant (9.0)
+|   |   |   |   |   |   |   |   |   Benefits > 4.41682
+|   |   |   |   |   |   |   |   |   |   Benefits <= 4.589697: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 4.589697: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   |   |   BasePay <= 3.104162
+|   |   |   |   |   |   |   |   |   |   BasePay <= 3.102009
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.109496: Patient Care Assistant (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.109496: Custodian (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 3.102009: Patient Care Assistant (14.0)
+|   |   |   |   |   |   |   |   |   BasePay > 3.104162: Custodian (9.0)
+|   |   |   |   |   |   |   |   Status = PT: Patient Care Assistant (1.0)
+|   |   |   |   |   |   BasePay > 3.139003
+|   |   |   |   |   |   |   Benefits <= 4.518279: Custodian (436.0)
+|   |   |   |   |   |   |   Benefits > 4.518279
+|   |   |   |   |   |   |   |   Status = Other: Transit Operator (4.0/1.0)
+|   |   |   |   |   |   |   |   Status = FT: Custodian (56.0)
+|   |   |   |   |   |   |   |   Status = PT: Custodian (0.0)
+|   |   |   |   OvertimePay > 0.207158
+|   |   |   |   |   BasePay <= 3.133613
+|   |   |   |   |   |   OtherPay <= 0.017648
+|   |   |   |   |   |   |   OtherPay <= 0.016256
+|   |   |   |   |   |   |   |   OtherPay <= 0.000463: Custodian (19.0)
+|   |   |   |   |   |   |   |   OtherPay > 0.000463
+|   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.710772: Patient Care Assistant (4.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 0.710772: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   Status = FT: Custodian (5.0)
+|   |   |   |   |   |   |   |   |   Status = PT: Transit Operator (1.0)
+|   |   |   |   |   |   |   OtherPay > 0.016256: Patient Care Assistant (68.0/2.0)
+|   |   |   |   |   |   OtherPay > 0.017648
+|   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   OtherPay <= 0.248316
+|   |   |   |   |   |   |   |   |   BasePay <= 2.457764
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.155885: Transit Operator (38.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.155885
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.188068: Patient Care Assistant (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.188068: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   BasePay > 2.457764
+|   |   |   |   |   |   |   |   |   |   BasePay <= 2.924675
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.905526
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.245667
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.243072: Patient Care Assistant (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.243072: Custodian (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.245667
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.81329
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.851734: Transit Operator (69.0/20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.851734
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.168168: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.168168: Patient Care Assistant (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.81329
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.351095: Transit Operator (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.351095
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.798448
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.6055
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.355868
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.817958: Transit Operator (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.817958: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.355868
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.833203: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 2.833203: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.6055: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.798448: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.905526
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.033123: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.033123: Patient Care Assistant (19.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 2.924675
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.960769
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.512583: Transit Operator (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.512583: Custodian (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.960769
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.283606
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.115558: Custodian (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 3.115558: Patient Care Assistant (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.283606: Transit Operator (49.0/5.0)
+|   |   |   |   |   |   |   |   OtherPay > 0.248316
+|   |   |   |   |   |   |   |   |   BasePay <= 2.400309: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   |   BasePay > 2.400309
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 2.223947: Patient Care Assistant (45.0/6.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 2.223947
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.96863
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.494515: Patient Care Assistant (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.494515: Transit Operator (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.96863
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 3.211967: Transit Operator (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 3.211967: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   |   Benefits <= 4.66577
+|   |   |   |   |   |   |   |   |   BasePay <= 2.65667: Patient Care Assistant (12.0/1.0)
+|   |   |   |   |   |   |   |   |   BasePay > 2.65667
+|   |   |   |   |   |   |   |   |   |   Benefits <= 4.401458: Custodian (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 4.401458
+|   |   |   |   |   |   |   |   |   |   |   TotalPay <= 1.970883
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.024197: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.024197: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPay > 1.970883: Patient Care Assistant (9.0)
+|   |   |   |   |   |   |   |   Benefits > 4.66577
+|   |   |   |   |   |   |   |   |   TotalPay <= 2.022026: Transit Operator (11.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 2.022026
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 2.235078
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 2.894878: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 2.894878
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.861672: Patient Care Assistant (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.861672: Custodian (2.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 2.235078: Patient Care Assistant (13.0)
+|   |   |   |   |   |   |   Status = PT: Transit Operator (132.0/22.0)
+|   |   |   |   |   BasePay > 3.133613
+|   |   |   |   |   |   Benefits <= 4.582973: Custodian (84.0/2.0)
+|   |   |   |   |   |   Benefits > 4.582973: Transit Operator (9.0/1.0)
+|   |   |   BasePay > 3.177943
+|   |   |   |   OtherPay <= 0.518918
+|   |   |   |   |   BasePay <= 3.436366
+|   |   |   |   |   |   Benefits <= 4.496742
+|   |   |   |   |   |   |   OtherPay <= 0.095344
+|   |   |   |   |   |   |   |   BasePay <= 3.21132: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   BasePay > 3.21132: Custodian (6.0/2.0)
+|   |   |   |   |   |   |   OtherPay > 0.095344
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   Benefits <= 4.104402: Patient Care Assistant (8.0)
+|   |   |   |   |   |   |   |   |   Benefits > 4.104402: Registered Nurse (5.0)
+|   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (0.0)
+|   |   |   |   |   |   |   |   Status = PT: Patient Care Assistant (17.0)
+|   |   |   |   |   |   Benefits > 4.496742
+|   |   |   |   |   |   |   OvertimePay <= 0.467448
+|   |   |   |   |   |   |   |   OtherPay <= 0.093115
+|   |   |   |   |   |   |   |   |   Benefits <= 4.69828
+|   |   |   |   |   |   |   |   |   |   BasePay <= 3.274689: Transit Operator (5.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 3.274689: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   |   |   Benefits > 4.69828: Transit Operator (24.0)
+|   |   |   |   |   |   |   |   OtherPay > 0.093115
+|   |   |   |   |   |   |   |   |   Benefits <= 4.842874
+|   |   |   |   |   |   |   |   |   |   BasePay <= 3.226606: Transit Operator (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 3.226606: Patient Care Assistant (44.0/2.0)
+|   |   |   |   |   |   |   |   |   Benefits > 4.842874
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 2.292269: Transit Operator (12.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 2.292269: Patient Care Assistant (5.0/1.0)
+|   |   |   |   |   |   |   OvertimePay > 0.467448: Transit Operator (47.0/1.0)
+|   |   |   |   |   BasePay > 3.436366
+|   |   |   |   |   |   BasePay <= 3.940155
+|   |   |   |   |   |   |   Benefits <= 4.076095
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   BasePay <= 3.526766: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   |   BasePay > 3.526766: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   Status = FT: Registered Nurse (0.0)
+|   |   |   |   |   |   |   |   Status = PT: Registered Nurse (2.0)
+|   |   |   |   |   |   |   Benefits > 4.076095
+|   |   |   |   |   |   |   |   BasePay <= 3.872259
+|   |   |   |   |   |   |   |   |   BasePay <= 3.555136
+|   |   |   |   |   |   |   |   |   |   Benefits <= 4.662169: Patient Care Assistant (82.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 4.662169
+|   |   |   |   |   |   |   |   |   |   |   Status = Other: Transit Operator (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Status = PT: Patient Care Assistant (0.0)
+|   |   |   |   |   |   |   |   |   BasePay > 3.555136
+|   |   |   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.491468
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.667682: Patient Care Assistant (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 3.667682
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.083612: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.083612: Transit Operator (13.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 4.491468
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 1.13003
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.710904: Registered Nurse (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 3.710904
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 4.74437: Patient Care Assistant (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 4.74437: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 1.13003: Transit Operator (3.0)
+|   |   |   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (19.0)
+|   |   |   |   |   |   |   |   |   |   Status = PT: Patient Care Assistant (1.0)
+|   |   |   |   |   |   |   |   BasePay > 3.872259
+|   |   |   |   |   |   |   |   |   Benefits <= 4.390588: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   Benefits > 4.390588: Patient Care Assistant (159.0)
+|   |   |   |   |   |   BasePay > 3.940155: Registered Nurse (14.0/4.0)
+|   |   |   |   OtherPay > 0.518918
+|   |   |   |   |   OvertimePay <= 0.992412: Registered Nurse (21.0/1.0)
+|   |   |   |   |   OvertimePay > 0.992412
+|   |   |   |   |   |   OvertimePay <= 1.948493: Transit Operator (2.0/1.0)
+|   |   |   |   |   |   OvertimePay > 1.948493: Firefighter (3.0)
+|   Benefits > 4.926702
+|   |   Benefits <= 5.508962
+|   |   |   OtherPay <= 0.291538
+|   |   |   |   OtherPay <= 0.017117: Patient Care Assistant (25.0/2.0)
+|   |   |   |   OtherPay > 0.017117
+|   |   |   |   |   BasePay <= 3.655333: Transit Operator (643.0/19.0)
+|   |   |   |   |   BasePay > 3.655333
+|   |   |   |   |   |   BasePay <= 3.676403
+|   |   |   |   |   |   |   BasePay <= 3.67523
+|   |   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   |   TotalPay <= 2.852638
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.058943
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 3.660815: Transit Operator (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 3.660815: Patient Care Assistant (6.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.058943: Transit Operator (5.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 2.852638: Transit Operator (6.0)
+|   |   |   |   |   |   |   |   Status = FT: Transit Operator (8.0)
+|   |   |   |   |   |   |   |   Status = PT: Transit Operator (0.0)
+|   |   |   |   |   |   |   BasePay > 3.67523: Patient Care Assistant (41.0)
+|   |   |   |   |   |   BasePay > 3.676403
+|   |   |   |   |   |   |   BasePay <= 3.896352
+|   |   |   |   |   |   |   |   Benefits <= 5.188117
+|   |   |   |   |   |   |   |   |   Status = Other: Transit Operator (14.0/1.0)
+|   |   |   |   |   |   |   |   |   Status = FT: Firefighter (22.0)
+|   |   |   |   |   |   |   |   |   Status = PT: Firefighter (0.0)
+|   |   |   |   |   |   |   |   Benefits > 5.188117: Transit Operator (266.0/2.0)
+|   |   |   |   |   |   |   BasePay > 3.896352
+|   |   |   |   |   |   |   |   Status = Other: Registered Nurse (2.0/1.0)
+|   |   |   |   |   |   |   |   Status = FT: Patient Care Assistant (9.0)
+|   |   |   |   |   |   |   |   Status = PT: Patient Care Assistant (0.0)
+|   |   |   OtherPay > 0.291538
+|   |   |   |   BasePay <= 3.744109
+|   |   |   |   |   OvertimePay <= 0.424012
+|   |   |   |   |   |   BasePay <= 3.020392: Custodian (3.0)
+|   |   |   |   |   |   BasePay > 3.020392
+|   |   |   |   |   |   |   OtherPay <= 0.449566: Patient Care Assistant (34.0/4.0)
+|   |   |   |   |   |   |   OtherPay > 0.449566: Transit Operator (3.0/1.0)
+|   |   |   |   |   OvertimePay > 0.424012
+|   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   Benefits <= 5.322579: Transit Operator (17.0/2.0)
+|   |   |   |   |   |   |   Benefits > 5.322579
+|   |   |   |   |   |   |   |   TotalPay <= 2.658868: Transit Operator (4.0)
+|   |   |   |   |   |   |   |   TotalPay > 2.658868
+|   |   |   |   |   |   |   |   |   BasePay <= 3.678216: Patient Care Assistant (22.0/4.0)
+|   |   |   |   |   |   |   |   |   BasePay > 3.678216: Transit Operator (3.0)
+|   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   Benefits <= 5.16142: Patient Care Assistant (2.0)
+|   |   |   |   |   |   |   Benefits > 5.16142: Transit Operator (15.0)
+|   |   |   |   |   |   Status = PT: Transit Operator (6.0)
+|   |   |   |   BasePay > 3.744109
+|   |   |   |   |   Status = Other: Registered Nurse (13.0)
+|   |   |   |   |   Status = FT
+|   |   |   |   |   |   OtherPay <= 0.324891: Firefighter (17.0)
+|   |   |   |   |   |   OtherPay > 0.324891: Patient Care Assistant (44.0)
+|   |   |   |   |   Status = PT: Patient Care Assistant (0.0)
+|   |   Benefits > 5.508962
+|   |   |   BasePay <= 3.690115
+|   |   |   |   OtherPay <= 0.305457
+|   |   |   |   |   TotalPay <= 2.999173: Transit Operator (625.0)
+|   |   |   |   |   TotalPay > 2.999173
+|   |   |   |   |   |   Benefits <= 5.653006
+|   |   |   |   |   |   |   Status = Other: Patient Care Assistant (6.0)
+|   |   |   |   |   |   |   Status = FT: Transit Operator (13.0)
+|   |   |   |   |   |   |   Status = PT: Transit Operator (0.0)
+|   |   |   |   |   |   Benefits > 5.653006: Transit Operator (52.0)
+|   |   |   |   OtherPay > 0.305457
+|   |   |   |   |   Benefits <= 5.772282
+|   |   |   |   |   |   Status = Other: Patient Care Assistant (35.0/2.0)
+|   |   |   |   |   |   Status = FT: Transit Operator (20.0)
+|   |   |   |   |   |   Status = PT: Patient Care Assistant (0.0)
+|   |   |   |   |   Benefits > 5.772282: Transit Operator (70.0/2.0)
+|   |   |   BasePay > 3.690115
+|   |   |   |   OtherPay <= 0.599545: Transit Operator (2760.0/2.0)
+|   |   |   |   OtherPay > 0.599545
+|   |   |   |   |   OtherPay <= 0.68519: Transit Operator (22.0)
+|   |   |   |   |   OtherPay > 0.68519: Registered Nurse (3.0/1.0)
+BasePay > 4.13968
+|   Benefits <= 3.010556
+|   |   Benefits <= 2.156167: Special Nurse (362.0)
+|   |   Benefits > 2.156167
+|   |   |   OvertimePay <= 0.466584: Special Nurse (20.0/2.0)
+|   |   |   OvertimePay > 0.466584: Registered Nurse (3.0)
+|   Benefits > 3.010556
+|   |   BasePay <= 6.722124
+|   |   |   OvertimePay <= 0.823345
+|   |   |   |   Status = Other
+|   |   |   |   |   TotalPay <= 4.454302
+|   |   |   |   |   |   Benefits <= 6.362436
+|   |   |   |   |   |   |   BasePay <= 6.387554
+|   |   |   |   |   |   |   |   OvertimePay <= 0.478453
+|   |   |   |   |   |   |   |   |   TotalPayBenefits <= 4.825119: Registered Nurse (364.0/53.0)
+|   |   |   |   |   |   |   |   |   TotalPayBenefits > 4.825119
+|   |   |   |   |   |   |   |   |   |   BasePay <= 6.303905: Registered Nurse (20.0/8.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 6.303905
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.655206: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.655206: Firefighter (11.0)
+|   |   |   |   |   |   |   |   OvertimePay > 0.478453
+|   |   |   |   |   |   |   |   |   BasePay <= 4.931285
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 3.852215
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.542493: Firefighter (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.542493: Registered Nurse (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 3.852215: Firefighter (25.0)
+|   |   |   |   |   |   |   |   |   BasePay > 4.931285
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.474476
+|   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.261426: Police Officer 3 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.261426
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.378045: Registered Nurse (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.378045
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay <= 0.399603: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OtherPay > 0.399603: Registered Nurse (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.474476
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 5.523299: Registered Nurse (6.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 5.523299: Firefighter (8.0/2.0)
+|   |   |   |   |   |   |   BasePay > 6.387554
+|   |   |   |   |   |   |   |   Benefits <= 6.004564
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.296402
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 4.010908: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 4.010908: Police Officer 3 (25.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.296402
+|   |   |   |   |   |   |   |   |   |   BasePay <= 6.66595: Registered Nurse (28.0/12.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 6.66595: Police Officer 3 (5.0)
+|   |   |   |   |   |   |   |   Benefits > 6.004564: Registered Nurse (37.0/2.0)
+|   |   |   |   |   |   Benefits > 6.362436
+|   |   |   |   |   |   |   Benefits <= 6.807384
+|   |   |   |   |   |   |   |   TotalPay <= 4.131382: Registered Nurse (83.0)
+|   |   |   |   |   |   |   |   TotalPay > 4.131382
+|   |   |   |   |   |   |   |   |   OvertimePay <= 0.569592
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.58916: Registered Nurse (33.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.58916
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.290873: Registered Nurse (29.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 6.290873
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.378539: Firefighter (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 6.378539: Registered Nurse (6.0/1.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 0.569592: Firefighter (3.0)
+|   |   |   |   |   |   |   Benefits > 6.807384: Registered Nurse (317.0)
+|   |   |   |   |   TotalPay > 4.454302
+|   |   |   |   |   |   Benefits <= 6.267596
+|   |   |   |   |   |   |   OtherPay <= 0.799614
+|   |   |   |   |   |   |   |   Benefits <= 6.004884
+|   |   |   |   |   |   |   |   |   Benefits <= 5.832226
+|   |   |   |   |   |   |   |   |   |   TotalPay <= 4.611931
+|   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 4.966935
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.695634
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.575335: Police Officer 3 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 6.575335: Registered Nurse (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BasePay > 6.695634: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 4.966935: Police Officer 3 (5.0)
+|   |   |   |   |   |   |   |   |   |   TotalPay > 4.611931: Registered Nurse (4.0)
+|   |   |   |   |   |   |   |   |   Benefits > 5.832226: Police Officer 3 (14.0)
+|   |   |   |   |   |   |   |   Benefits > 6.004884
+|   |   |   |   |   |   |   |   |   BasePay <= 6.500261
+|   |   |   |   |   |   |   |   |   |   BasePay <= 6.387554: Firefighter (2.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 6.387554: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   |   BasePay > 6.500261: Registered Nurse (6.0/1.0)
+|   |   |   |   |   |   |   OtherPay > 0.799614
+|   |   |   |   |   |   |   |   BasePay <= 5.643221: Police Officer 3 (4.0)
+|   |   |   |   |   |   |   |   BasePay > 5.643221
+|   |   |   |   |   |   |   |   |   BasePay <= 6.369442
+|   |   |   |   |   |   |   |   |   |   BasePay <= 6.367269: Registered Nurse (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 6.367269: Firefighter (4.0)
+|   |   |   |   |   |   |   |   |   BasePay > 6.369442: Registered Nurse (33.0/4.0)
+|   |   |   |   |   |   Benefits > 6.267596
+|   |   |   |   |   |   |   Benefits <= 7.212609
+|   |   |   |   |   |   |   |   BasePay <= 6.282547: Registered Nurse (43.0/3.0)
+|   |   |   |   |   |   |   |   BasePay > 6.282547
+|   |   |   |   |   |   |   |   |   BasePay <= 6.391954
+|   |   |   |   |   |   |   |   |   |   Benefits <= 6.749472: Firefighter (123.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 6.749472
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.365803: Registered Nurse (6.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 6.365803: Firefighter (3.0)
+|   |   |   |   |   |   |   |   |   BasePay > 6.391954
+|   |   |   |   |   |   |   |   |   |   Benefits <= 6.642603
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.698839
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.688564: Registered Nurse (34.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.688564: Firefighter (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 6.698839: Firefighter (4.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 6.642603
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.657892
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 6.899731
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay <= 0.55822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits <= 6.667013: Firefighter (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Benefits > 6.667013: Registered Nurse (19.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   OvertimePay > 0.55822: Firefighter (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Benefits > 6.899731: Registered Nurse (8.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 6.657892: Firefighter (113.0/10.0)
+|   |   |   |   |   |   |   Benefits > 7.212609: Registered Nurse (52.0/1.0)
+|   |   |   |   Status = FT
+|   |   |   |   |   OtherPay <= 0.437679
+|   |   |   |   |   |   TotalPay <= 3.878053
+|   |   |   |   |   |   |   OtherPay <= 0.184583: Police Officer 3 (2.0/1.0)
+|   |   |   |   |   |   |   OtherPay > 0.184583: Firefighter (7.0/1.0)
+|   |   |   |   |   |   TotalPay > 3.878053
+|   |   |   |   |   |   |   OvertimePay <= 0.430131
+|   |   |   |   |   |   |   |   Benefits <= 6.517208
+|   |   |   |   |   |   |   |   |   TotalPay <= 4.246816: Police Officer 3 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 4.246816: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   Benefits > 6.517208: Registered Nurse (19.0/1.0)
+|   |   |   |   |   |   |   OvertimePay > 0.430131: Police Officer 3 (10.0)
+|   |   |   |   |   OtherPay > 0.437679
+|   |   |   |   |   |   BasePay <= 6.484124
+|   |   |   |   |   |   |   TotalPay <= 4.464543
+|   |   |   |   |   |   |   |   Benefits <= 7.262962
+|   |   |   |   |   |   |   |   |   BasePay <= 5.829965: Firefighter (30.0)
+|   |   |   |   |   |   |   |   |   BasePay > 5.829965
+|   |   |   |   |   |   |   |   |   |   OtherPay <= 0.565172: Registered Nurse (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   OtherPay > 0.565172
+|   |   |   |   |   |   |   |   |   |   |   Benefits <= 6.267967: Registered Nurse (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Benefits > 6.267967: Firefighter (24.0/2.0)
+|   |   |   |   |   |   |   |   Benefits > 7.262962: Registered Nurse (3.0)
+|   |   |   |   |   |   |   TotalPay > 4.464543: Firefighter (109.0/1.0)
+|   |   |   |   |   |   BasePay > 6.484124
+|   |   |   |   |   |   |   Benefits <= 7.109879
+|   |   |   |   |   |   |   |   BasePay <= 6.520458: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   BasePay > 6.520458: Registered Nurse (2.0)
+|   |   |   |   |   |   |   Benefits > 7.109879: Firefighter (4.0)
+|   |   |   |   Status = PT: Registered Nurse (475.0/18.0)
+|   |   |   OvertimePay > 0.823345
+|   |   |   |   OtherPay <= 0.566253
+|   |   |   |   |   BasePay <= 4.948396
+|   |   |   |   |   |   TotalPayBenefits <= 3.860199: Registered Nurse (2.0)
+|   |   |   |   |   |   TotalPayBenefits > 3.860199
+|   |   |   |   |   |   |   Benefits <= 5.954015: Firefighter (23.0)
+|   |   |   |   |   |   |   Benefits > 5.954015
+|   |   |   |   |   |   |   |   BasePay <= 4.544994: Transit Operator (8.0)
+|   |   |   |   |   |   |   |   BasePay > 4.544994: Firefighter (3.0)
+|   |   |   |   |   BasePay > 4.948396
+|   |   |   |   |   |   OtherPay <= 0.466442
+|   |   |   |   |   |   |   Status = Other
+|   |   |   |   |   |   |   |   Benefits <= 6.322573
+|   |   |   |   |   |   |   |   |   BasePay <= 5.832684: Registered Nurse (4.0/2.0)
+|   |   |   |   |   |   |   |   |   BasePay > 5.832684: Police Officer 3 (34.0)
+|   |   |   |   |   |   |   |   Benefits > 6.322573
+|   |   |   |   |   |   |   |   |   OvertimePay <= 1.631375: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   |   OvertimePay > 1.631375: Firefighter (5.0/1.0)
+|   |   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   |   BasePay <= 5.793517: Firefighter (4.0/1.0)
+|   |   |   |   |   |   |   |   BasePay > 5.793517: Police Officer 3 (8.0)
+|   |   |   |   |   |   |   Status = PT: Registered Nurse (6.0/1.0)
+|   |   |   |   |   |   OtherPay > 0.466442
+|   |   |   |   |   |   |   TotalPayBenefits <= 5.599909
+|   |   |   |   |   |   |   |   TotalPay <= 4.84418
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.5229: Police Officer 3 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.5229: Firefighter (4.0)
+|   |   |   |   |   |   |   |   TotalPay > 4.84418: Police Officer 3 (6.0)
+|   |   |   |   |   |   |   TotalPayBenefits > 5.599909: Firefighter (13.0)
+|   |   |   |   OtherPay > 0.566253
+|   |   |   |   |   Benefits <= 6.118749
+|   |   |   |   |   |   BasePay <= 5.608556
+|   |   |   |   |   |   |   Benefits <= 4.467566: Police Officer 3 (3.0/1.0)
+|   |   |   |   |   |   |   Benefits > 4.467566: Firefighter (51.0/1.0)
+|   |   |   |   |   |   BasePay > 5.608556
+|   |   |   |   |   |   |   OvertimePay <= 0.906164: Registered Nurse (5.0/1.0)
+|   |   |   |   |   |   |   OvertimePay > 0.906164
+|   |   |   |   |   |   |   |   Benefits <= 4.690622: Firefighter (7.0/1.0)
+|   |   |   |   |   |   |   |   Benefits > 4.690622
+|   |   |   |   |   |   |   |   |   TotalPay <= 4.759624: Firefighter (4.0)
+|   |   |   |   |   |   |   |   |   TotalPay > 4.759624
+|   |   |   |   |   |   |   |   |   |   OvertimePay <= 2.963447: Police Officer 3 (30.0/2.0)
+|   |   |   |   |   |   |   |   |   |   OvertimePay > 2.963447: Firefighter (2.0)
+|   |   |   |   |   Benefits > 6.118749
+|   |   |   |   |   |   Status = Other: Firefighter (898.0/4.0)
+|   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   BasePay <= 6.562019: Firefighter (437.0/1.0)
+|   |   |   |   |   |   |   BasePay > 6.562019
+|   |   |   |   |   |   |   |   Benefits <= 7.093401: Police Officer 3 (5.0)
+|   |   |   |   |   |   |   |   Benefits > 7.093401: Firefighter (2.0)
+|   |   |   |   |   |   Status = PT: Registered Nurse (1.0)
+|   |   BasePay > 6.722124
+|   |   |   Benefits <= 6.867512
+|   |   |   |   BasePay <= 7.385807
+|   |   |   |   |   Status = Other
+|   |   |   |   |   |   Benefits <= 6.569645
+|   |   |   |   |   |   |   OvertimePay <= 0.730849
+|   |   |   |   |   |   |   |   BasePay <= 6.731559: Police Officer 3 (278.0/2.0)
+|   |   |   |   |   |   |   |   BasePay > 6.731559
+|   |   |   |   |   |   |   |   |   BasePay <= 6.948586: Registered Nurse (58.0/16.0)
+|   |   |   |   |   |   |   |   |   BasePay > 6.948586
+|   |   |   |   |   |   |   |   |   |   BasePay <= 7.123143: Police Officer 3 (272.0/7.0)
+|   |   |   |   |   |   |   |   |   |   BasePay > 7.123143
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 7.3685
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits <= 5.274331
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay <= 4.548404: Police Officer 3 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalPay > 4.548404: Registered Nurse (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalPayBenefits > 5.274331
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay <= 7.281258: Police Officer 3 (7.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BasePay > 7.281258: Firefighter (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 7.3685: Police Officer 3 (8.0)
+|   |   |   |   |   |   |   OvertimePay > 0.730849: Police Officer 3 (646.0/1.0)
+|   |   |   |   |   |   Benefits > 6.569645
+|   |   |   |   |   |   |   BasePay <= 7.348051
+|   |   |   |   |   |   |   |   OvertimePay <= 0.875892
+|   |   |   |   |   |   |   |   |   OtherPay <= 0.620702: Registered Nurse (29.0)
+|   |   |   |   |   |   |   |   |   OtherPay > 0.620702
+|   |   |   |   |   |   |   |   |   |   Benefits <= 6.635874: Firefighter (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Benefits > 6.635874
+|   |   |   |   |   |   |   |   |   |   |   BasePay <= 6.760649: Firefighter (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BasePay > 6.760649: Registered Nurse (13.0)
+|   |   |   |   |   |   |   |   OvertimePay > 0.875892: Firefighter (8.0/1.0)
+|   |   |   |   |   |   |   BasePay > 7.348051: Police Officer 3 (11.0)
+|   |   |   |   |   Status = FT
+|   |   |   |   |   |   BasePay <= 7.118925: Police Officer 3 (575.0/4.0)
+|   |   |   |   |   |   BasePay > 7.118925: Registered Nurse (11.0/1.0)
+|   |   |   |   |   Status = PT: Registered Nurse (56.0)
+|   |   |   |   BasePay > 7.385807: Registered Nurse (101.0)
+|   |   |   Benefits > 6.867512
+|   |   |   |   OvertimePay <= 1.053669
+|   |   |   |   |   OvertimePay <= 0.637121: Registered Nurse (691.0/8.0)
+|   |   |   |   |   OvertimePay > 0.637121
+|   |   |   |   |   |   BasePay <= 7.016735
+|   |   |   |   |   |   |   Status = Other: Registered Nurse (4.0/1.0)
+|   |   |   |   |   |   |   Status = FT
+|   |   |   |   |   |   |   |   OtherPay <= 0.442303: Police Officer 3 (2.0)
+|   |   |   |   |   |   |   |   OtherPay > 0.442303: Firefighter (5.0)
+|   |   |   |   |   |   |   Status = PT: Firefighter (0.0)
+|   |   |   |   |   |   BasePay > 7.016735
+|   |   |   |   |   |   |   OvertimePay <= 0.646597
+|   |   |   |   |   |   |   |   OtherPay <= 1.233558: Registered Nurse (3.0)
+|   |   |   |   |   |   |   |   OtherPay > 1.233558: Firefighter (2.0)
+|   |   |   |   |   |   |   OvertimePay > 0.646597: Registered Nurse (48.0)
+|   |   |   |   OvertimePay > 1.053669
+|   |   |   |   |   Status = Other
+|   |   |   |   |   |   OvertimePay <= 1.632346
+|   |   |   |   |   |   |   OtherPay <= 0.993953: Registered Nurse (2.0)
+|   |   |   |   |   |   |   OtherPay > 0.993953: Firefighter (7.0/2.0)
+|   |   |   |   |   |   OvertimePay > 1.632346: Firefighter (24.0/1.0)
+|   |   |   |   |   Status = FT
+|   |   |   |   |   |   Benefits <= 7.220987: Police Officer 3 (12.0)
+|   |   |   |   |   |   Benefits > 7.220987: Firefighter (6.0)
+|   |   |   |   |   Status = PT: Firefighter (0.0)
+
+Number of Leaves  : 	732
+
+Size of the tree : 	1409
+
+
+Time taken to build model: 2.03 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.06 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3276               88.9976 %
+Incorrectly Classified Instances       405               11.0024 %
+Kappa statistic                          0.8611
+Mean absolute error                      0.0293
+Root mean squared error                  0.1463
+Relative absolute error                 16.5532 %
+Root relative squared error             49.2907 %
+Total Number of Instances             3681     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.902    0.009    0.933      0.902    0.917      0.906    0.964     0.877     Firefighter
+                 0.923    0.007    0.944      0.923    0.933      0.924    0.986     0.943     Police Officer 3
+                 0.903    0.028    0.865      0.903    0.884      0.860    0.958     0.845     Registered Nurse
+                 0.938    0.038    0.935      0.938    0.936      0.899    0.965     0.941     Transit Operator
+                 0.872    0.012    0.805      0.872    0.837      0.828    0.946     0.813     Special Nurse
+                 0.658    0.023    0.715      0.658    0.685      0.660    0.873     0.593     Patient Care Assistant
+                 0.845    0.016    0.845      0.845    0.845      0.830    0.951     0.824     Custodian
+                 0.750    0.001    0.800      0.750    0.774      0.774    0.902     0.666     Public Svc Aide-Public Works
+                 0.000    0.001    0.000      0.000    0.000      -0.001   0.748     0.063     Recreation Leader
+Weighted Avg.    0.890    0.024    0.890      0.890    0.890      0.866    0.956     0.870     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i   <-- classified as
+  387    6   33    3    0    0    0    0    0 |    a = Firefighter
+   10  406   22    0    2    0    0    0    0 |    b = Police Officer 3
+   15   15  550    5    9    6    9    0    0 |    c = Registered Nurse
+    2    1   10 1264   15   40   14    2    0 |    d = Transit Operator
+    0    2    7    8  177    6    1    0    2 |    e = Special Nurse
+    1    0   10   54    9  196   28    0    0 |    f = Patient Care Assistant
+    0    0    4   15    7   25  284    1    0 |    g = Custodian
+    0    0    0    2    1    0    0   12    1 |    h = Public Svc Aide-Public Works
+    0    0    0    1    0    1    0    0    0 |    i = Recreation Leader
+
